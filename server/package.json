@@ -1,0 +1,23 @@
+{
+    "name": "tree-tracking-server",
+    "version": "1.0.0",
+    "description": "RFID-based tree tracking system backend",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "seed": "node seeds.js"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.3",
+      "mongoose": "^6.2.9",
+      "node-cron": "^3.0.0"
+    },
+    "devDependencies": {
+      "concurrently": "^7.1.0",
+      "nodemon": "^2.0.15"
+    }
+  }
